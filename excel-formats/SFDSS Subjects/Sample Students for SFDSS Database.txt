@@ -1,0 +1,217 @@
+-- INSERT statements for Grade 7
+-- Section A
+INSERT INTO `users_accounts`(`user_id`, `user_name`, `user_year_level`, `user_section`, `user_photo`, `user_password`, `user_status`, `user_type`, `account_created`) 
+VALUES 
+   ('20110001', 'Emma Watson', 'Grade 7', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20110002', 'Daniel Radcliffe', 'Grade 7', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20110003', 'Rupert Grint', 'Grade 7', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20110004', 'Emma Stone', 'Grade 7', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20110005', 'Tom Holland', 'Grade 7', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20110006', 'Zendaya', 'Grade 7', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20110007', 'Chris Hemsworth', 'Grade 7', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20110008', 'Scarlett Johansson', 'Grade 7', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20110009', 'Chris Pratt', 'Grade 7', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20110010', 'Gal Gadot', 'Grade 7', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW());
+
+-- Section B
+INSERT INTO `users_accounts`(`user_id`, `user_name`, `user_year_level`, `user_section`, `user_photo`, `user_password`, `user_status`, `user_type`, `account_created`) 
+VALUES 
+   ('20111001', 'Leonardo DiCaprio', 'Grade 7', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20111002', 'Jennifer Lawrence', 'Grade 7', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20111003', 'Robert Pattinson', 'Grade 7', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20111004', 'Natalie Portman', 'Grade 7', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20111005', 'Johnny Depp', 'Grade 7', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20111006', 'Anne Hathaway', 'Grade 7', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20111007', 'Tom Cruise', 'Grade 7', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20111008', 'Angelina Jolie', 'Grade 7', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20111009', 'George Clooney', 'Grade 7', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20111010', 'Mila Kunis', 'Grade 7', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW());
+
+-- Section C
+INSERT INTO `users_accounts`(`user_id`, `user_name`, `user_year_level`, `user_section`, `user_photo`, `user_password`, `user_status`, `user_type`, `account_created`) 
+VALUES 
+   ('20112001', 'Brad Pitt', 'Grade 7', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20112002', 'Julia Roberts', 'Grade 7', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20112003', 'Matt Damon', 'Grade 7', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20112004', 'Charlize Theron', 'Grade 7', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20112005', 'Keanu Reeves', 'Grade 7', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20112006', 'Cate Blanchett', 'Grade 7', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20112007', 'Hugh Jackman', 'Grade 7', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20112008', 'Nicole Kidman', 'Grade 7', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20112009', 'Will Smith', 'Grade 7', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20112010', 'Natalie Portman', 'Grade 7', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW());
+
+-- INSERT statements for Grade 8
+-- Section A
+INSERT INTO `users_accounts`(`user_id`, `user_name`, `user_year_level`, `user_section`, `user_photo`, `user_password`, `user_status`, `user_type`, `account_created`) 
+VALUES 
+   ('20120001', 'Chris Evans', 'Grade 8', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20120002', 'Emily Blunt', 'Grade 8', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20120003', 'Zac Efron', 'Grade 8', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20120004', 'Margot Robbie', 'Grade 8', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20120005', 'Dwayne Johnson', 'Grade 8', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20120006', 'Kate Winslet', 'Grade 8', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20120007', 'Ryan Reynolds', 'Grade 8', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20120008', 'Gal Gadot', 'Grade 8', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20120009', 'Tom Hanks', 'Grade 8', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20120010', 'Scarlett Johansson', 'Grade 8', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW());
+
+-- Section B
+INSERT INTO `users_accounts`(`user_id`, `user_name`, `user_year_level`, `user_section`, `user_photo`, `user_password`, `user_status`, `user_type`, `account_created`) 
+VALUES 
+   ('20121001', 'Hugh Jackman', 'Grade 8', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20121002', 'Jennifer Aniston', 'Grade 8', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20121003', 'Leonardo DiCaprio', 'Grade 8', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20121004', 'Charlize Theron', 'Grade 8', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20121005', 'Will Smith', 'Grade 8', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20121006', 'Meryl Streep', 'Grade 8', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20121007', 'Chris Hemsworth', 'Grade 8', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20121008', 'Anne Hathaway', 'Grade 8', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20121009', 'Ryan Gosling', 'Grade 8', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20121010', 'Natalie Portman', 'Grade 8', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW());
+
+-- Section C
+INSERT INTO `users_accounts`(`user_id`, `user_name`, `user_year_level`, `user_section`, `user_photo`, `user_password`, `user_status`, `user_type`, `account_created`) 
+VALUES 
+   ('20122001', 'George Clooney', 'Grade 8', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20122002', 'Julia Roberts', 'Grade 8', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20122003', 'Matt Damon', 'Grade 8', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20122004', 'Cate Blanchett', 'Grade 8', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20122005', 'Keanu Reeves', 'Grade 8', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20122006', 'Nicole Kidman', 'Grade 8', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20122007', 'Tom Cruise', 'Grade 8', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20122008', 'Angelina Jolie', 'Grade 8', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20122009', 'Brad Pitt', 'Grade 8', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20122010', 'Kate Winslet', 'Grade 8', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW());
+
+
+-- INSERT statements for Grade 10 (Singer Names)
+-- Section A
+INSERT INTO `users_accounts`(`user_id`, `user_name`, `user_year_level`, `user_section`, `user_photo`, `user_password`, `user_status`, `user_type`, `account_created`) 
+VALUES 
+   ('20200001', 'Beyoncé Knowles', 'Grade 10', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20200002', 'Justin Bieber', 'Grade 10', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20200003', 'Adele', 'Grade 10', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20200004', 'Ed Sheeran', 'Grade 10', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20200005', 'Lady Gaga', 'Grade 10', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20200006', 'Taylor Swift', 'Grade 10', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20200007', 'Bruno Mars', 'Grade 10', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20200008', 'Ariana Grande', 'Grade 10', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20200009', 'Shawn Mendes', 'Grade 10', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20200010', 'Rihanna', 'Grade 10', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW());
+
+-- Section B
+INSERT INTO `users_accounts`(`user_id`, `user_name`, `user_year_level`, `user_section`, `user_photo`, `user_password`, `user_status`, `user_type`, `account_created`) 
+VALUES 
+   ('20201001', 'Drake', 'Grade 10', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20201002', 'BTS', 'Grade 10', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20201003', 'Billie Eilish', 'Grade 10', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20201004', 'Katy Perry', 'Grade 10', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20201005', 'The Weeknd', 'Grade 10', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20201006', 'Elton John', 'Grade 10', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20201007', 'Alicia Keys', 'Grade 10', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20201008', 'Sam Smith', 'Grade 10', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20201009', 'Dua Lipa', 'Grade 10', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20201010', 'Miley Cyrus', 'Grade 10', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW());
+
+-- Section C
+INSERT INTO `users_accounts`(`user_id`, `user_name`, `user_year_level`, `user_section`, `user_photo`, `user_password`, `user_status`, `user_type`, `account_created`) 
+VALUES 
+   ('20202001', 'John Legend', 'Grade 10', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20202002', 'Shakira', 'Grade 10', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20202003', 'Harry Styles', 'Grade 10', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20202004', 'Alicia Keys', 'Grade 10', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20202005', 'Ariana Grande', 'Grade 10', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20202006', 'Bruno Mars', 'Grade 10', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20202007', 'Katy Perry', 'Grade 10', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20202008', 'Taylor Swift', 'Grade 10', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20202009', 'Ed Sheeran', 'Grade 10', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20202010', 'Lady Gaga', 'Grade 10', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW());
+
+
+-- INSERT statements for Grade 11 (Singer Names)
+-- Section A
+INSERT INTO `users_accounts`(`user_id`, `user_name`, `user_year_level`, `user_section`, `user_photo`, `user_password`, `user_status`, `user_type`, `account_created`) 
+VALUES 
+   ('20210001', 'Adele', 'Grade 11', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20210002', 'Eminem', 'Grade 11', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20210003', 'Alicia Keys', 'Grade 11', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20210004', 'The Weeknd', 'Grade 11', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20210005', 'Dua Lipa', 'Grade 11', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20210006', 'Sam Smith', 'Grade 11', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20210007', 'Miley Cyrus', 'Grade 11', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20210008', 'Harry Styles', 'Grade 11', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20210009', 'Billie Eilish', 'Grade 11', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20210010', 'Shawn Mendes', 'Grade 11', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW());
+
+-- Section B
+INSERT INTO `users_accounts`(`user_id`, `user_name`, `user_year_level`, `user_section`, `user_photo`, `user_password`, `user_status`, `user_type`, `account_created`) 
+VALUES 
+   ('20211001', 'Justin Bieber', 'Grade 11', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20211002', 'Beyoncé Knowles', 'Grade 11', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20211003', 'Ed Sheeran', 'Grade 11', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20211004', 'Ariana Grande', 'Grade 11', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20211005', 'Taylor Swift', 'Grade 11', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20211006', 'Bruno Mars', 'Grade 11', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20211007', 'Katy Perry', 'Grade 11', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20211008', 'Lady Gaga', 'Grade 11', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20211009', 'Shakira', 'Grade 11', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20211010', 'John Legend', 'Grade 11', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW());
+
+-- Section C
+INSERT INTO `users_accounts`(`user_id`, `user_name`, `user_year_level`, `user_section`, `user_photo`, `user_password`, `user_status`, `user_type`, `account_created`) 
+VALUES 
+   ('20212001', 'Nicole Kidman', 'Grade 11', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20212002', 'Hugh Jackman', 'Grade 11', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20212003', 'Natalie Portman', 'Grade 11', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20212004', 'Leonardo DiCaprio', 'Grade 11', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20212005', 'Angelina Jolie', 'Grade 11', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20212006', 'Chris Hemsworth', 'Grade 11', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20212007', 'Mila Kunis', 'Grade 11', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20212008', 'Ryan Reynolds', 'Grade 11', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20212009', 'Margot Robbie', 'Grade 11', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20212010', 'Chris Evans', 'Grade 11', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW());
+
+
+-- INSERT statements for Grade 12 (Anime Character Names)
+-- Section A
+INSERT INTO `users_accounts`(`user_id`, `user_name`, `user_year_level`, `user_section`, `user_photo`, `user_password`, `user_status`, `user_type`, `account_created`) 
+VALUES 
+   ('20220001', 'Naruto Uzumaki', 'Grade 12', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20220002', 'Sasuke Uchiha', 'Grade 12', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20220003', 'Sakura Haruno', 'Grade 12', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20220004', 'Luffy Monkey D.', 'Grade 12', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20220005', 'Goku Son', 'Grade 12', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20220006', 'Vegeta Prince', 'Grade 12', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20220007', 'Ichigo Kurosaki', 'Grade 12', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20220008', 'Natsu Dragneel', 'Grade 12', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20220009', 'Eren Yeager', 'Grade 12', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20220010', 'Light Yagami', 'Grade 12', 'Section A', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW());
+
+-- Section B
+INSERT INTO `users_accounts`(`user_id`, `user_name`, `user_year_level`, `user_section`, `user_photo`, `user_password`, `user_status`, `user_type`, `account_created`) 
+VALUES 
+   ('20221001', 'Lelouch Lamperouge', 'Grade 12', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20221002', 'Saitama', 'Grade 12', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20221003', 'Mikasa Ackerman', 'Grade 12', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20221004', 'Monkey D. Luffy', 'Grade 12', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20221005', 'Vegeta', 'Grade 12', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20221006', 'Gon Freecss', 'Grade 12', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20221007', 'Levi Ackerman', 'Grade 12', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20221008', 'Sasuke Uchiha', 'Grade 12', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20221009', 'Naruto Uzumaki', 'Grade 12', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20221010', 'Luffy Monkey D.', 'Grade 12', 'Section B', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW());
+
+-- Section C
+INSERT INTO `users_accounts`(`user_id`, `user_name`, `user_year_level`, `user_section`, `user_photo`, `user_password`, `user_status`, `user_type`, `account_created`) 
+VALUES 
+   ('20222001', 'Goku Son', 'Grade 12', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20222002', 'Vegeta Prince', 'Grade 12', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20222003', 'Naruto Uzumaki', 'Grade 12', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20222004', 'Luffy Monkey D.', 'Grade 12', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20222005', 'Goku Son', 'Grade 12', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20222006', 'Vegeta Prince', 'Grade 12', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20222007', 'Ichigo Kurosaki', 'Grade 12', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20222008', 'Natsu Dragneel', 'Grade 12', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20222009', 'Eren Yeager', 'Grade 12', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW()),
+   ('20222010', 'Light Yagami', 'Grade 12', 'Section C', 'default-image.jpg', 'dGVzdDEyMy4=', 'Offline', 'student', NOW());

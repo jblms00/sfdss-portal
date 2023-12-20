@@ -1,0 +1,387 @@
+/* Smartphones */
+@media (max-width: 767px) {
+
+    .dropend:hover>.dropdown-menu {
+        position: absolute;
+        top: 40px !important;
+        left: 13px !important;
+    }
+
+    .registrar-dropend:hover>.student-year {
+        position: absolute;
+        top: 4.5rem !important;
+        left: 35px !important;
+    }
+
+    .index-page .school-name,
+    .shs-page .school-name,
+    .admin-process-page .school-name,
+    .events-gallery-page .school-name,
+    .faq-page .school-name,
+    .sfdss-page .school-name,
+    .student-side-page .school-name,
+    .administration-page .school-name,
+    .hymnn-page .school-name,
+    .history-page .school-name,
+    .contact-info-page .school-name,
+    .mvg-page .school-name,
+    .registrar-side-page .school-name,
+    .admin-side-page .school-name {
+        text-align: center;
+    }
+
+    .index-page .school-name h1,
+    .shs-page .school-name h1,
+    .admin-process-page .school-name h1,
+    .events-gallery-page .school-name h1,
+    .faq-page .school-name h1,
+    .sfdss-page .school-name h1,
+    .student-side-page .school-name h1,
+    .administration-page .school-name h1,
+    .hymnn-page .school-name h1,
+    .history-page .school-name h1,
+    .contact-info-page .school-name h1,
+    .mvg-page .school-name h1,
+    .registrar-side-page .school-name h1,
+    .admin-side-page .school-name h1 {
+        font-size: 18px !important;
+    }
+
+    .main-container .banner {
+        height: 25rem !important;
+    }
+
+    .index-page .school-desc {
+        text-align: center;
+    }
+
+    .index-page .img-gallery,
+    .mvg-page .img-gallery {
+        width: 100%;
+    }
+
+    .index-page .featured-events {
+        width: 100% !important;
+    }
+
+    .index-page .featured-events .gallery-wrap {
+        width: 85% !important;
+        margin: auto !important;
+        height: 27vh;
+    }
+
+    .index-page .login-container {
+        padding: 0;
+    }
+
+    .index-page .school-logo {
+        display: none;
+    }
+
+    .index-page .login-form {
+        width: 100% !important;
+    }
+
+    .shs-page .school-strand {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .shs-page .school-strand .row {
+        margin: 12px !important;
+    }
+
+    .shs-page .school-strand img {
+        width: 100%;
+        margin-bottom: 1.4rem;
+    }
+
+    .shs-page .school-strand h5 {
+        margin-bottom: 1.5rem;
+    }
+
+    .admin-process-page .school-desc,
+    .faq-page .school-desc,
+    .hymnn-page .school-desc,
+    .history-page .school-desc,
+    .mvg-page .school-desc {
+        padding: 1.5rem;
+    }
+
+    .student-side-page .school-desc,
+    .contact-info-page .school-map,
+    .registrar-side-page .school-desc,
+    .registrar-side-page .manage-students-container,
+    .admin-side-page .manage-students-container {
+        padding: 1rem;
+    }
+
+    .admin-process-page h2,
+    .faq-page h2 {
+        margin: 0 0 12px 0 !important;
+        text-align: center;
+    }
+
+    .administration-page h4,
+    .hymnn-page .col-sm {
+        text-align: center;
+    }
+
+    .hymnn-page img.box-shadow {
+        margin-top: 16px;
+    }
+
+    /* Student Side */
+    .student-side-page iframe,
+    .registrar-side-page iframe {
+        width: 100%;
+        height: 32rem;
+    }
+
+    .student-side-page .notification-row {
+        margin: 0 !important;
+    }
+
+    .student-side-page .event-container {
+        padding: 1rem !important;
+    }
+
+    .student-side-page table,
+    .registrar-side-page table,
+    .admin-side-page table {
+        width: 100% !important;
+        margin: 1rem 0 !important;
+    }
+
+    .student-side-page .modal-opt-btn {
+        width: 35% !important;
+    }
+
+    .student-side-page .message,
+    .registrar-side-page .message,
+    .admin-side-page .message {
+        padding: 4px !important;
+    }
+
+    .student-side-page .message h5,
+    .registrar-side-page .message h5,
+    .admin-side-page .message h5 {
+        font-size: 16px;
+    }
+
+    .student-side-page .box {
+        width: 100% !important;
+    }
+
+    .student-side-page .box input[type="text"] {
+        width: 100% !important;
+    }
+
+    .student-side-page .submit-request-btn {
+        width: 50% !important;
+    }
+
+    /* Registrar Side */
+    .registrar-side-page .registrar-notif {
+        width: 100% !important;
+    }
+
+    .registrar-side-page .notif-content p {
+        font-size: 14px !important;
+    }
+
+    .registrar-side-page .notif-content .notif-time {
+        font-size: 12px !important;
+        margin: 0 !important;
+    }
+
+    .registrar-side-page .modal-opt-btn {
+        width: 45% !important;
+    }
+
+    .registrar-side-page .search-container button,
+    .admin-side-page .search-container button {
+        font-size: 11px !important;
+    }
+
+    .registrar-side-page .sort-btn,
+    .registrar-side-page .btn-add-student,
+    .admin-side-page .sort-btn,
+    .admin-side-page .btn-add-student {
+        margin-left: 4px !important;
+    }
+
+    .registrar-side-page .remove-all-btn,
+    .admin-side-page .remove-all-btn,
+    .admin-side-page .remove-selected-btn {
+        margin-right: 4px !important;
+    }
+
+    .registrar-side-page .requested-credentials-table button,
+    .registrar-side-page .modal-dialog table button {
+        margin: 3px !important;
+    }
+
+    .registrar-side-page table th,
+    .registrar-side-page table td {
+        font-size: 15px !important;
+    }
+
+    /* Admin Side */
+    .admin-side-page .container-fluid.p-5 {
+        padding: 1rem !important;
+    }
+
+    .admin-side-page .message h3 {
+        margin: 0 !important;
+    }
+
+    .admin-side-page .search-input {
+        width: 50% !important;
+    }
+
+    .admin-side-page .add-student-btn {
+        width: 50% !important;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .school-desc .row.align-items-center,
+    .athsports-page .row.align-items-center,
+    .clubs-org-page .row.align-items-center {
+        flex-direction: column;
+    }
+
+    .index-page .school-desc .row.align-items-center .col-sm,
+    .news-ann-page .container-fluid.p-5 .col-sm-5,
+    .news-ann-page .container-fluid.p-5 .col-sm-7,
+    .student-side-page .school-desc .col-sm-7,
+    .admin-side-page .col-sm-7 {
+        margin: 1.4rem 0;
+    }
+
+    .index-page .login-container input[type="text"] {
+        width: 100%;
+    }
+
+    .index-page .login-form {
+        width: 50% !important;
+    }
+
+    .admin-side-page .card,
+    .sfdss-page .card,
+    .student-side-page .card {
+        height: 18.375rem;
+        width: 17rem;
+    }
+
+    .news-ann-page .col-sm-7,
+    .student-side-page .col-sm-7,
+    .registrar-side-page .col-sm-7,
+    .admin-side-page .col-sm-7 {
+        width: 90%;
+    }
+
+    .news-ann-page .container-fluid.p-5 {
+        padding: 12px !important;
+    }
+
+    .news-ann-page .container-fluid.p-5 .row,
+    .admin-side-page .container-fluid.p-5 .row {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .news-ann-page .container-fluid.p-5 .col-sm-5,
+    .admin-side-page .container-fluid.p-5 .col-sm-5 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .clubs-org-page .container-fluid.p-5 {
+        padding: 1rem;
+    }
+
+    .clubs-org-page .row.align-items-center {
+        margin: 5rem 0;
+    }
+
+    .contact-info-page .school-map {
+        padding: 1rem;
+    }
+
+    .contact-info-page .school-map .row {
+        flex-direction: column;
+    }
+
+    .contact-info-page .school-map img {
+        width: 70%;
+    }
+
+    .shs-page .school-strand img {
+        width: 100%;
+    }
+
+    .shs-page .school-strand h5 {
+        font-size: 18px;
+    }
+
+    /* Student Side */
+    .student-side-page .fb-frame,
+    .registrar-side-page .fb-frame {
+        width: 100%;
+        text-align: center;
+    }
+
+    .student-side-page .school-desc {
+        padding-bottom: 0;
+    }
+
+    .student-side-page .notification-row {
+        margin-bottom: 0 !important;
+    }
+
+    .student-side-page table {
+        margin: 1rem 0 !important;
+    }
+
+    .student-side-page .row.my-5 {
+        margin: 0 !important;
+    }
+
+    .student-side-page .grades-page {
+        padding-bottom: 2rem;
+    }
+
+    .student-side-page .grades-page .row.my-5 {
+        flex-direction: column;
+    }
+
+    .student-side-page.schedule-page table,
+    .student-side-page table,
+    .registrar-side-page table,
+    .admin-side-page table {
+        width: 100% !important;
+    }
+
+    .student-side-page.schedule-page .school-desc {
+        padding: 0 2rem;
+    }
+
+    .student-side-page .box {
+        width: 100% !important;
+        text-align: left;
+    }
+
+    /* Registrar Side */
+    .registrar-side-page .registrar-grades-page .col-sm {
+        margin: 1rem;
+    }
+
+    /* Admin Side */
+    .admin-side-page .container-feeds {
+        width: 100% !important;
+    }
+}

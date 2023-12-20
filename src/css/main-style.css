@@ -1,0 +1,1459 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* or  */
+    /* font-family: 'Titillium Web', sans-serif; */
+}
+
+*::selection {
+    background-color: #035543ae;
+    color: #ffffff;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #035543;
+    border-radius: 10px;
+}
+
+/* *:focus {
+    color: #ffffff;
+} */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.error-message {
+    color: red;
+}
+
+.btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    color: #ffffff;
+    border-radius: 50%;
+    background-color: #035543;
+    box-shadow: 0px 0px 12px 4px rgb(0 0 0 / 75%);
+    z-index: 1000;
+    transition: transform .2s;
+}
+
+.btn-back-to-top:hover {
+    background-color: #035543;
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+.btn-back-to-top .bi-arrow-up:active,
+.btn-back-to-top:active {
+    color: #ffffff;
+    background-color: #035543;
+    transition: 0.4s;
+}
+
+.text-green {
+    color: #035543;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.modal-opt-btn {
+    background-color: #035543;
+    color: #ffffff;
+    border: none;
+    border-radius: 9px;
+    font-size: 14px;
+    padding: 4px 0;
+    width: 30%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.modal-title {
+    color: #035543;
+    font-weight: 600;
+}
+
+.modal-body textarea {
+    resize: none;
+    outline: none;
+    color: #035543;
+    font-size: 15px;
+    width: 100%;
+    border: 1px solid #035543;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-weight: 700;
+    color: #035543;
+}
+
+.logo-atag {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    width: 7rem;
+}
+
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav {
+    background-color: #035543;
+    padding: 4px 0;
+    width: 100%;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 0;
+    margin: 4px 14px;
+    transition: 1.2s;
+}
+
+
+.navbar ul .nav-item::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    content: "";
+    background-color: rgb(255, 255, 255);
+    width: 0%;
+    height: 2px;
+    transition: all 1s;
+}
+
+.navbar ul .nav-item:hover::after {
+    width: 100%;
+    transition: all 0.8s;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown:hover>.dropdown-menu,
+.dropend:hover>.dropdown-menu {
+    transition: 2s;
+    display: block;
+    margin-top: .125rem;
+}
+
+.dropend:hover>.dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: .125rem;
+}
+
+.dropdown-toggle::after,
+.dropend .dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown a:hover {
+    background-color: #035543;
+    color: white;
+    transition: 0.5s;
+}
+
+.dropdown p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #035543;
+}
+
+.main-container {
+    overflow: auto;
+}
+
+.main-container .banner {
+    position: relative;
+    height: 35rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container .banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(21, 21, 21, 0.364);
+}
+
+.school-desc,
+.school-map,
+.school-strand {
+    padding: 3rem;
+}
+
+.school-desc .school-logo {
+    width: 20rem;
+}
+
+/* Gallery */
+.img-gallery {
+    --g: 3px;
+    display: grid;
+    width: 29rem;
+    aspect-ratio: 1;
+    grid: auto-flow 1fr/repeat(3, 1fr);
+    gap: var(--g);
+    margin: auto;
+}
+
+.img-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale();
+    transition: .5s
+}
+
+.img-gallery img:hover {
+    filter: grayscale(0);
+}
+
+.img-gallery img:nth-child(2) {
+    grid-area: 1/2/span 2/span 2;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, calc(50% + var(--g)/4) 100%, 0 calc(50% - var(--g)/4))
+}
+
+.img-gallery img:nth-child(3) {
+    grid-area: 2/1/span 2/span 2;
+    clip-path: polygon(0 0, calc(50% - var(--g)/4) 0, 100% calc(50% + var(--g)/4), 100% 100%, 0 100%);
+}
+
+.main-container .login-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 40px;
+    height: 20rem;
+    background-color: #035543;
+}
+
+.main-container .login-container .school-logo {
+    width: 15rem;
+}
+
+.main-container .login-form {
+    width: 25%;
+}
+
+.main-container .login-form input[type="text"],
+.main-container .login-form input[type="password"] {
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px 8px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #035543;
+}
+
+.login-form .show-password,
+.student-side-page .show-password {
+    display: flex;
+    align-items: center;
+}
+
+.login-form .show-password input,
+.student-side-page .show-password input {
+    border: none;
+    outline: none;
+}
+
+.login-form .show-password label,
+.student-side-page .show-password label {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.btn-login {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    outline: none;
+    background: none;
+    position: relative;
+    width: 50%;
+    margin-top: 10px;
+    transition: 1s;
+}
+
+.btn-login:hover {
+    background-color: #ffffff;
+    color: #035543;
+    transition: 1s;
+}
+
+.custom-tooltip {
+    margin-left: 4px;
+    --bs-tooltip-bg: #017a5e;
+    --bs-tooltip-color: var(--bs-white);
+}
+
+.featured-events {
+    padding: 5rem 2rem;
+}
+
+.featured-events .gallery-wrap {
+    width: 85%;
+    margin: auto;
+}
+
+.gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50vh;
+}
+
+.item {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.8s ease;
+
+    &:hover {
+        flex: 4;
+    }
+}
+
+.item-1 {
+    background-image: url(../css/images/328983779_524029783203935_6624059093667029195_n.webp);
+}
+
+.item-2 {
+    background-image: url(../css/images/328551167_856289748797715_3722112899955507740_n.webp);
+}
+
+.item-3 {
+    background-image: url(../css/images/328551305_705850384346787_457953398646727488_n.webp);
+}
+
+.item-4 {
+    background-image: url(../css/images/328546718_496192555921931_6698210368609777928_n.webp);
+}
+
+.item-5 {
+    background-image: url(../css/images/355483929_693489132788018_7402875331261229963_n.webp);
+}
+
+.item-6 {
+    background-image: url(../css/images/355638592_693308629472735_103481794106803264_n.webp);
+}
+
+.item-7 {
+    background-image: url(../css/images/355670862_693308506139414_1730773809025882086_n.webp);
+}
+
+.item-8 {
+    background-image: url(../css/images/355303424_693487986121466_465585629875907980_n.webp);
+}
+
+.mis-vis-school {
+    /* background-color: #035543; */
+    padding: 3rem;
+}
+
+.mis-vis-school h3,
+.mis-vis-school h5 {
+    color: #035543;
+}
+
+.mis-vis-school ul {
+    list-style: none;
+}
+
+.mis-vis-school span {
+    font-family: 'Lobster', cursive;
+    font-weight: 700;
+}
+
+.box-shadow {
+    box-shadow: 0px 0px 12px 6px rgb(0 0 0 / 75%);
+}
+
+.school-admins td {
+    background-color: #e7e7e7d5;
+    color: #035543;
+    font-size: 18px;
+    border: none;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.school-map {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.school-map h4 {
+    color: #035543;
+    font-weight: 700;
+}
+
+.school-map h5 {
+    color: #035543;
+    font-weight: 300;
+}
+
+.school-map img {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0px 0px 12px 6px rgb(0 0 0 / 75%);
+    transition: transform .5s;
+}
+
+.school-map img:hover {
+    transform: scale(1.2);
+}
+
+.school-strand img {
+    width: 80%;
+}
+
+.faq-page ul {
+    list-style: none;
+}
+
+.athsports-page .img-box img {
+    height: 250px;
+    width: 350px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+}
+
+.athsports-page .img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 0px 8px 2px rgb(0 0 0 / 75%);
+}
+
+.athsports-page .caption {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.athsports-page .caption p {
+    margin: 0;
+}
+
+.athsports-page .transparent-box {
+    height: 250px;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+}
+
+.athsports-page .img-box:hover img {
+    transform: scale(1.1);
+}
+
+.athsports-page .img-box:hover .transparent-box {
+    background-color: rgba(0, 0, 0, 0.689);
+}
+
+.athsports-page .img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+}
+
+.athsports-page .img-box:hover {
+    cursor: pointer;
+}
+
+.athsports-page .caption>p:nth-child(2) {
+    font-size: 0.8em;
+}
+
+.athsports-page .opacity-low {
+    opacity: 0.5;
+}
+
+.clubs-org-page .container-org img {
+    width: 55%;
+}
+
+/* Events Gallery Page */
+.events-gallery-page h2 {
+    color: #035543;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 3rem;
+}
+
+.gallery-events {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 45px auto 0 45px;
+    grid-template-areas:
+        ". n n n n n n n n n n d"
+        "m c c c c c c c c c c a"
+        "s c c c c c c c c c c a"
+        "s . . . . . . . . . . b";
+}
+
+.gallery-container {
+    grid-area: c;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: 200px;
+    grid-gap: 20px;
+    grid-auto-flow: dense;
+}
+
+.gallery-container::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-container>div {
+    z-index: 1;
+    position: relative;
+    padding: 0;
+    box-shadow: 0px 0px 8px 2px rgb(0 0 0 / 75%);
+}
+
+.gallery-container div img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .6s ease-in-out;
+}
+
+.gallery-container>div,
+.gallery-container div img {
+    transition: all .6s ease-in-out;
+}
+
+.gallery-container>div:hover,
+.gallery-container>div:hover img {
+    transform: scale(1.03);
+}
+
+.card {
+    padding: 0;
+    width: 100%;
+    height: 50%;
+    bottom: -50%;
+    padding: 1em;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, .5);
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.vertical {
+    grid-row: span 2;
+}
+
+.horizontal {
+    grid-column: span 2;
+}
+
+.big {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-130%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(300%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottomActive {
+    0% {
+        padding-bottom: 300px;
+    }
+
+    100% {}
+}
+
+@keyframes slideInFromTop {
+    0% {
+        opacity: 0;
+        margin-bottom: -100%;
+        ;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Student Side */
+.student-side-page .message,
+.registrar-side-page .message,
+.admin-side-page .message,
+.athsports-page .message {
+    position: relative;
+    z-index: 50;
+    padding: 2rem 5rem;
+    text-align: center;
+    color: #035543;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.student-side-page iframe,
+.registrar-side-page iframe,
+.admin-side-page iframe,
+.news-ann-page iframe {
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #035543;
+}
+
+.student-side-page .nav-link:focus {
+    color: #ffffff;
+}
+
+.student-side-page table {
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    width: 60rem;
+}
+
+.student-side-page th {
+    width: 10rem;
+}
+
+.student-side-page th,
+.student-side-page td,
+.registrar-side-page th,
+.registrar-side-page td {
+    font-size: 18px;
+    color: #035543;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.user-profile-img {
+    border-radius: 50%;
+    border: 2px solid #035543;
+    height: 10rem;
+    width: 10rem;
+    margin-bottom: 15px;
+}
+
+.student-side-page .student-subjects table {
+    width: 30rem;
+}
+
+.student-side-page .box {
+    background-color: #035543;
+    padding: 2rem;
+    margin: auto;
+    width: 50%;
+    box-shadow: 0px 0px 14px 7px rgb(0 0 0 / 75%);
+}
+
+.student-side-page .input-data {
+    border-radius: 9px;
+    padding: 20px;
+    background-color: #eef2e8;
+    margin: 14px 0;
+}
+
+.student-side-page .input-data h5 {
+    font-weight: 600;
+    color: #035543;
+    font-size: 17.5px;
+}
+
+.student-side-page .input-data input[type="text"] {
+    background: none;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    width: 50%;
+    color: #035543;
+    border-bottom: 1px solid #035543;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.student-side-page .form-check {
+    margin: 8px 0;
+}
+
+.student-side-page .form-check label {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 17px;
+    color: #035543;
+}
+
+.student-side-page .form-check input[type="checkbox"] {
+    background-color: #0355437c;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.student-side-page .submit-request-btn {
+    background-color: #eef2e8;
+    border: none;
+    border-radius: 5px;
+    width: 30%;
+    font-family: 'Titillium Web', sans-serif;
+    transition: 1s;
+    color: #035543;
+}
+
+.student-side-page .submit-request-btn:hover {
+    background: none;
+    color: #ffffff;
+    border: 1px solid #eef2e8;
+    transition: 1s;
+}
+
+.student-side-page .display-message {
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.student-side-page .event-container h3 {
+    background-color: #035543;
+    padding: 7px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 0 10px 4px #03554394;
+}
+
+.student-side-page .student-notification,
+.registrar-side-page .registrar-notification {
+    background-color: #ffffff;
+    color: #035543;
+    padding: 1rem 0;
+    border-radius: 13px;
+    box-shadow: 0 0 10px 5px #03251d94;
+}
+
+.student-side-page .student-notification ul,
+.registrar-side-page .registrar-notification ul {
+    height: 22.1rem;
+    margin: 0;
+    list-style: none;
+}
+
+.student-side-page .student-notification li,
+.registrar-side-page .registrar-notification li {
+    color: #035543;
+    font-size: 14.5px;
+    border-top: 1px solid #035543;
+    border-bottom: 1px solid #035543;
+    padding: 5px;
+}
+
+.student-side-page .display-photo {
+    width: 40px;
+}
+
+.student-side-page .change-pass-btn {
+    background-color: #035543;
+    color: #ffffff;
+    font-size: 14px;
+    width: 20%;
+}
+
+.student-side-page .change-password-content .toggle-new-password,
+.student-side-page .change-password-content .toggle-confirm-password {
+    width: auto;
+}
+
+.student-side-page .change-password-content label,
+.student-side-page .change-password-content p {
+    font-family: 'Titillium Web', sans-serif;
+    color: #035543;
+    font-weight: 600;
+}
+
+/* Registrar Side */
+.registrar-side-page .registrar-notification ul {
+    padding: 0;
+}
+
+.registrar-side-page .registrar-notification li {
+    display: flex;
+    align-items: center;
+}
+
+.registrar-side-page .dropdown-item {
+    font-size: 16px;
+}
+
+.registrar-side-page .profile-table {
+    width: 40rem;
+    margin: auto;
+}
+
+.registrar-side-page .requested-credentials-table {
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+
+.registrar-side-page .requested-credentials-table button,
+.admin-side-page .manage-student-table button,
+.registrar-side-page .manage-student-table button {
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    color: #ffffff;
+    background-color: #006952;
+}
+
+.registrar-side-page ul li {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+}
+
+.registrar-side-page textarea {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 17px;
+}
+
+.registrar-side-page .search-container,
+.admin-side-page .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.registrar-side-page .search-input,
+.registrar-side-page .search-student-input,
+.admin-side-page .search-input,
+.admin-side-page .search-student-input {
+    width: 50%;
+    outline: none;
+    text-align: center;
+    color: #035543;
+}
+
+.registrar-side-page .btn-filter,
+.admin-side-page .btn-filter {
+    background-color: #035543;
+    color: #ffffff;
+    margin-left: 12px;
+}
+
+.registrar-side-page .form-select,
+.registrar-side-page .form-select option {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.registrar-side-page .form-select:focus {
+    box-shadow: 0 0 10px 4px #03554394;
+}
+
+.registrar-side-page .btn-remove-modal,
+.registrar-side-page .remove-all-btn,
+.registrar-side-page .sort-btn,
+.registrar-side-page .btn-add-student,
+.registrar-side-page .remove-selected-btn,
+.registrar-side-page .add-section-btn,
+.admin-side-page .btn-add-student,
+.admin-side-page .remove-all-btn,
+.admin-side-page .sort-btn,
+.admin-side-page .remove-selected-btn,
+.admin-side-page .add-section-btn {
+    background-color: #035543;
+    padding: 5px 10px;
+    color: #ffffff;
+    font-size: 15px;
+    margin-right: 12px;
+}
+
+.registrar-side-page .table-responsive,
+.admin-side-page .table-responsive {
+    overflow: hidden;
+}
+
+.registrar-side-page .registrar-notif {
+    width: 30rem;
+    padding: 0 0 2px 0;
+}
+
+.registrar-side-page .registrar-notif li {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #03554394;
+}
+
+.registrar-side-page .registrar-notif li:active {
+    background: none;
+}
+
+.registrar-side-page .notif-content,
+.student-side-page .notif-content {
+    display: flex;
+    align-items: center;
+}
+
+.registrar-side-page .notif-content .notif-time,
+.student-side-page .notif-content .notif-time {
+    color: rgb(187, 70, 70);
+    margin: 0;
+    margin-left: 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.registrar-side-page .notif-content p {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.registrar-side-page .notif-content .display-photo {
+    width: 7%;
+}
+
+.registrar-side-page .dropdown-item button {
+    border: none;
+    background: none;
+}
+
+.registrar-side-page .text-muted {
+    justify-content: center;
+}
+
+.registrar-side-page .text-muted p {
+    margin: 0;
+    font-size: 17px;
+    text-align: center;
+    color: rgb(187, 70, 70);
+}
+
+.registrar-side-page .btn-view-subjects,
+.registrar-side-page .btn-view-grades,
+.registrar-side-page .btn-upload,
+.student-side-page .btn-view-computation {
+    background-color: #035543;
+    color: #ffffff;
+}
+
+.registrar-side-page .input-excel,
+.admin-side-page .input-excel {
+    width: 100%;
+    color: #444;
+    padding: 5px;
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #555;
+    cursor: pointer;
+}
+
+.registrar-side-page .input-excel::file-selector-button,
+.admin-side-page .input-excel::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #035543;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+
+.registrar-side-page .modal-content .pagination .page-link {
+    color: #ffffff;
+    background-color: #006952;
+}
+
+.registrar-side-page .active>.page-link,
+.registrar-side-page .page-link.active {
+    background-color: #ffffff;
+    border-color: #035543;
+    color: #000000;
+    box-shadow: 0px 0px 12px 6px #03554396;
+}
+
+.registrar-side-page .table,
+.registrar-side-page .table tr,
+.registrar-side-page .table td,
+.registrar-side-page .table th {
+    margin: auto;
+    outline: 1px solid #035543;
+}
+
+
+/* Admin Side */
+.admin-side-page {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.admin-side-page button {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.admin-side-page .card button {
+    position: absolute;
+    top: auto;
+    bottom: 1rem;
+    right: 1rem;
+    left: auto;
+}
+
+.admin-side-page .card,
+.sfdss-page .card,
+.student-side-page .card {
+    padding: 0;
+    height: 14.375rem;
+    border: 1px solid #035543;
+    box-shadow: 0 0 8px 3px #03554394;
+}
+
+.admin-side-page .card ul,
+.sfdss-page .card ul,
+.student-side-page ul {
+    padding: 0;
+    /* height: 8.125rem; */
+    overflow: auto;
+}
+
+.admin-side-page .card li,
+.sfdss-page .card li,
+.student-side-page li {
+    color: #035543;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.admin-side-page .event-menu input {
+    border: 1px solid #035543;
+    color: #035543;
+    text-align: center;
+    outline: none;
+    width: 40%;
+    border-radius: 5px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.admin-side-page .add-event-btn,
+.admin-side-page .edit-event-btn,
+.admin-side-page .change-event-btn {
+    background-color: #035543;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 4px 1.5rem;
+}
+
+.admin-side-page .change-event-btn {
+    margin: 2px 0;
+    padding: 1px 1.5rem;
+}
+
+.admin-side-page .edit-event-btn {
+    padding: 2px 1.5rem;
+    font-size: 14px;
+}
+
+.admin-side-page select,
+.admin-side-page option {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.admin-side-page select:focus {
+    box-shadow: 0 0 10px 4px #03554394;
+}
+
+.admin-side-page .modal-input,
+.admin-side-page input[type="date"] {
+    border: none;
+    border-bottom: 1px solid #035543;
+    color: #035543;
+    outline: none;
+    width: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.admin-side-page .modal li {
+    font-family: 'Titillium Web', sans-serif;
+    list-style-type: disc;
+}
+
+.admin-side-page .change-event-btn {
+    font-size: 13px;
+}
+
+.manage-students-container {
+    padding: 2rem;
+}
+
+.manage-students-container .card {
+    width: 18rem;
+    height: 18rem;
+}
+
+.manage-students-container .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.manage-students-container .card-link {
+    background-color: #035543;
+    font-family: 'Titillium Web', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.admin-side-page .search-input {
+    width: 40%;
+}
+
+.admin-side-page .table {
+    width: 50%;
+    margin: auto;
+}
+
+.admin-side-page .form-group,
+.registrar-side-page .form-group {
+    display: flex;
+    align-items: center;
+}
+
+.admin-side-page .form-control,
+.registrar-side-page .form-control {
+    font-family: 'Titillium Web', sans-serif;
+    color: #035543;
+}
+
+.admin-side-page .form-control:focus,
+.registrar-side-page .form-control:focus {
+    box-shadow: 0 0 6px 2px #03554394;
+}
+
+.admin-side-page .remove-added-student,
+.registrar-side-page .remove-added-student {
+    background-color: #035543;
+    border: none;
+    color: #ffffff;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+.admin-side-page table tbody,
+.registrar-side-page table tbody {
+    overflow: auto;
+}
+
+.admin-side-page th,
+.admin-side-page td {
+    font-family: 'Titillium Web', sans-serif;
+    color: #035543;
+}
+
+.admin-side-page .sort-btn,
+.registrar-side-page .sort-btn {
+    margin: 0;
+    margin-left: 12px;
+}
+
+.admin-side-page .dropdown-item:hover {
+    background-color: #035543;
+    color: #ffffff;
+}
+
+.admin-side-page .remove-selected-btn,
+.registrar-side-page .remove-selected-btn {
+    border-radius: 4px;
+    border: none;
+}
+
+.admin-side-page .card-dashboard {
+    padding: 1.5rem;
+    height: 21.125rem;
+    width: 27rem;
+    color: #035543;
+    border-radius: 10px;
+}
+
+.admin-side-page .card-dashboard .card-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.admin-side-page .card-dashboard i {
+    font-size: 20px;
+    margin-right: 7px;
+}
+
+.admin-side-page .card-dashboard .card-graph {
+    height: 485px;
+    width: 242px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.admin-side-page .modal-add-student-content input,
+.registrar-side-page .modal-add-student-content input {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.admin-side-page .add-student-btn {
+    width: 35%;
+}
+
+.admin-side-page .add-section-content input[type="text"],
+.registrar-side-page .add-section-content input[type="text"],
+.student-side-page .change-password-content input {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #035543;
+    border-bottom: 1px solid #035543;
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 2rem;
+    background: none;
+}
+
+.admin-side-page .post-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px;
+    border-radius: 1rem;
+    background-color: #017a5e57;
+    border: 1px solid #035543;
+}
+
+.admin-side-page .post-container .post-btn {
+    background-color: #035543;
+    border-radius: 10px;
+    width: 100%;
+    color: #ffffff;
+}
+
+.admin-side-page .container-feeds,
+.news-ann-page .container-feeds {
+    color: #035543;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    height: 40.7rem;
+    box-shadow: 0px 0px 12px 4px rgb(0 0 0 / 75%);
+    overflow: auto;
+}
+
+.admin-side-page .posted-date,
+.news-ann-page .posted-date {
+    color: #990606;
+    font-weight: 600;
+    font-size: 13px;
+    margin-left: 12px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.admin-side-page .posted-feeds,
+.news-ann-page .posted-feeds {
+    color: #035543;
+    background-color: #03554349;
+    padding: 1.2rem;
+    border-radius: 14px;
+    border: 1px dashed #035543;
+}
+
+.admin-side-page .post-option,
+.news-ann-page .post-option {
+    margin-left: auto;
+}
+
+.admin-side-page .post-option .dropdown-menu,
+.news-ann-page .post-option .dropdown-menu {
+    z-index: 99999 !important;
+    font-size: 14px;
+    color: #035543;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.admin-side-page .admin-info,
+.news-ann-page .admin-info {
+    display: flex;
+    align-items: center;
+}
+
+.admin-side-page .admin-info img,
+.news-ann-page .admin-info img {
+    width: 2.5rem;
+    margin-right: 6px;
+}
+
+.admin-side-page .modal-post-content textarea,
+.news-ann-page .modal-post-content textarea {
+    padding: 5px;
+    color: #035543;
+    border-radius: 8px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* Notification */
+.notif-menu {
+    width: 10%;
+}
+
+.notif-menu li {
+    padding: 0;
+}
+
+.notif-menu button {
+    font-size: 16px;
+    color: #035543;
+    font-weight: 600;
+}
+
+/* Footer */
+.footer-clean {
+    padding: 35px 0;
+    background-color: #035543;
+    color: #ffffff;
+}
+
+.student-side-page .footer-clean {
+    padding: 10px 0;
+}
+
+.footer-clean h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer-clean ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.footer-clean ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-clean ul a:hover {
+    opacity: 1;
+}
+
+@media (max-width:767px) {
+    .footer-clean .footer-item {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+.footer-clean .copyright {
+    margin-top: 14px;
+    margin-bottom: 0;
+    font-size: 13px;
+    opacity: 0.6;
+}
